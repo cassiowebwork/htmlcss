@@ -1,0 +1,13 @@
+@charset "UTF-8";
+body{
+    background-image:linear-gradient(to bottom,#0AF874, #09D92A, #70D909);
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+div > p {
+    display: none;
+}
+div:hover > p {
+    display: block;
+    background-color: white
+}
