@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            text-align: center;
+            border: 4px solid black;
+            width: 400px;
+            height: 350px;
+          
+        }
+        th{
+            background-color: lightgrey;
+            border: 2px solid black ;
+        }
+        .exa{
+            background-color: rgb(121, 234, 234);
+        }
+        td{
+            border: 2px solid black ;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption> exercicio de tabela </caption>
+    
+    <thead>
+        <th scope="col" rowspan="2">area</th>
+        <th scope="colgroup">disciplinas</th>
+        
+            <th scope="colgroup" colspan="2" rowspan="2">notas
+            
+        </th>
+        
+        <th scope="colgroup">media</th>
+    </thead>
+    <tbody> 
+        <tr>
+            <th class="exa" scope="rowgroup" rowspan="4">exatas</th>
+            <td>matematica</td> 
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+        <tr>
+            <td>fisica</td>
+            <td>00</td>
+            <td>00</td>
+            <td>00</td>
+        </tr>
+        <tr>
+            <td>quimica</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>            
+        </tr>
+        <tr>
+            <td>biologia</td>
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        
+            <tr>
+                <th scope="row" colspan="4">media de exatas</th>
+                <td>00</td>
+            </tr>
+            <tr>
+                <th class="exa" scope="rowgroup" rowspan="2">humanas</th>
+                <td>historia</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <td>geografia</td>
+                <td>00</td>
+                <td>oo</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" colspan="4">media de humanns</th>
+                <td>00</td>
+            </tr>
+           
+        
+</table>
+</body>
+</html>

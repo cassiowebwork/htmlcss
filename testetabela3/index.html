@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            text-align: center;
+            border: 4px solid black;
+            width: 400px;
+            height: 350px;
+          
+        }
+        th{
+            border: 2px solid black ;
+        }
+        td{
+            border: 2px solid black ;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption> exercicio de tabela </caption>
+    
+    <thead>
+        <th>grupos</th>
+        <th>nomes</th>
+        <th scope="colgroup" colspan="3">filmes</th>
+    </thead>
+    <tbody> 
+        <tr>
+            <th scope="rowgroup" rowspan="3">mulheres</th>
+            <td>ana maria </td> 
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>beatriz</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>            
+        </tr>
+        <tr>
+            <td>claudia</td>
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr>
+            <th scope="rowgroup" rowspan="3">Homens</th>
+            <td>joazinho</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>pedrinho</td>
+            <td>j</td>
+            <td>k</td>
+            <td>l</td>
+        </tr>
+        <tr>
+            <td>lucas</td>
+            <td>m</td>
+            <td>n</td>
+            <td>o</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        
+    </tfoot>
+</table>
+</body>
+</html>
