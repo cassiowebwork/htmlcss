@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilos opcionais para o canvas */
+        #myCanvas {
+          border: 1px solid black;
+        }
+      </style>
+</head>
+<body>
+     <!-- O elemento canvas -->
+  <canvas id="myCanvas" width="400" height="400"></canvas>
+
+  <script>
+    // Captura o elemento canvas
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Define as coordenadas do centro do círculo
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+
+    // Define o raio do círculo
+    const radius = 50;
+
+    // Inicia o desenho
+    ctx.beginPath();
+    
+    // Define a posição do desenho (centro do círculo)
+    ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+    
+    // Define a cor de preenchimento
+    ctx.fillStyle = "blue";
+    
+    // Preenche o círculo com a cor definida
+    ctx.fill();
+    
+    // Encerra o desenho
+    ctx.closePath();
+  </script>
+</body>
+</html>

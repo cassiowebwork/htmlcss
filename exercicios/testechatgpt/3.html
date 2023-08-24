@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilos opcionais para o canvas */
+        #myCanvas {
+          border: 1px solid black;
+        }
+      </style>
+</head>
+<body>
+     <!-- O elemento canvas -->
+  <canvas id="myCanvas" width="900" height="900"></canvas>
+
+  <script>
+    // Captura o elemento canvas
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Posição inicial do círculo
+    let x = canvas.width / 2;
+    let y = canvas.height / 2;
+    const radius = 20;
+
+    // Função para desenhar o círculo
+    function drawCircle() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.beginPath();
+      ctx.arc(x, y, radius, 0, Math.PI * 2);
+      ctx.fillStyle = "blue";
+      ctx.fill();
+      ctx.closePath();
+    }
+
+    // Função para mover o círculo com as teclas de seta
+    function moveCircle(e) {
+      switch (e.key) {
+        case "ArrowUp":
+          y -= 10;
+          break;
+        case "ArrowDown":
+          y += 10;
+          break;
+        case "ArrowLeft":
+          x -= 10;
+          break;
+        case "ArrowRight":
+          x += 10;
+          break;
+      }
+      drawCircle();
+    }
+
+    // Event listener para a movimentação do círculo usando as teclas de seta
+    window.addEventListener("keydown", moveCircle);
+
+    // Inicializa o desenho
+    drawCircle();
+  </script>
+</body>
+</html>

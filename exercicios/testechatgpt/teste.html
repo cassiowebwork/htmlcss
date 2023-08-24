@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canva" width="450px " height="450px"></canvas>
+    <script>
+    var canva = document.getElementById("canva")
+    var ctx = canva.getContext("2d")
+
+    let x = canva.width/2
+    let y = canva.height/2
+
+    function draw(){
+        ctx.clearRect(0,0,canva.width,canva.height)
+        ctx.beginPath()
+        ctx.fillRect(x,y, 50,50)
+        ctx.closePath()
+    }
+    draw()
+    function moverect(e){
+        switch(e.key){
+            case "ArrowUp":
+            y -= 5 
+            break
+            case "ArrowDown":
+                 y += 5
+            break
+            case "ArrowLeft":
+                x -= 5
+            break
+            case "ArrowRight":
+                x += 5
+            break
+        }
+        draw()
+    }
+    window.addEventListener("keydown",moverect)
+     draw()
+
+    </script>
+</body>
+</html>

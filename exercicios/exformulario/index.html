@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    
+    <style>
+        body{
+            background-image: url(wallpaper002.jpg);
+            background-position: center center;
+            font-weight: bolder;
+            background-color:#73F488 ;
+        }
+        main{
+            padding: 50px;
+            border: 1px solid black;
+            margin: auto;
+            background-color: #193791c8;
+            width: 750px;
+            height: 650px;
+        }
+        h1{
+            text-align: center;
+        }
+        #div1 input{
+            width: 500px;
+        }
+            
+           
+    
+        p{
+            font-weight: bolder;
+        }
+        #radio{
+            width: auto;
+            height: auto;
+            text-align: start;
+        }
+        #seletor{
+            width: 500px;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <form action="formulario.js">
+            <div id="div1">
+                <p>
+                    <label for="nome">name: <br>
+                        <input type="text" name="nome" id="name" placeholder="enter your name">
+                    </label>
+                </p>
+                <p>
+                    <label for="email"> Email: <br>
+                        <input type="email" name="email" id="email" placeholder="enter your email">
+                    </label>
+                </p>
+                <p>
+                    <label for="idade"> age: <br>
+                        <input type="number" name="idade" id="idade" placeholder="enter your age">
+                    </label>
+            </div>
+            <div>
+                <p> wich options best describe your role ?</p>
+                <select name="seletor" id="seletor">
+                    <option value="student">student</option>
+                    <option value="job">fulltime job</option>
+                    <option value="enginer">softwere enginer</option>
+                    <option value="developer">developer</option>
+                </select>
+            </div>
+            
+              <div>
+                  <p>wuld you recomend free code camp?</p>
+                  <p>
+                      <label for="sim">
+                           <input type="radio" name="sim" id="sim" value="sim" checked>sim <br>
+                  
+                       </label>
+
+                       <label for="no">
+                       <input type="radio" name="sim" id="no"> no
+                       </label><br>
+
+                       <label for="maybe"> 
+                        <input type="radio" name="sim" id="maybe"></label>maybe
+                  </p>
+              </div>
+              <div>
+                  <p>whats your favorite feature of freecode camp?</p>
+                  <select name="options" id="areas">select an option
+                         <option value="chalengens">chalengens</option>
+                        <option value="projects">projects</option>
+                        <option value="comuniti">comuniti</option>
+                    </select>
+                    <p>what would you like to see improved</p>
+                    <input type="checkbox" name="check" id="check"> front end <br>
+                    <input type="checkbox" name="check" id="check"> beck end <br>
+                    <input type="checkbox" name="check" id="check"> data visulization <br>
+                    <input type="checkbox" name="check" id="check"> chalengens
+                      <p>
+                        <label for="senha"> Senha: <br><input type="password" name="senha" id="senha" placeholder="digite sua senha"></label>
+                      </p>
+                  
+                  <p>
+                    <input type="reset" value="limpar">
+                  
+                    <input type="submit" value="enviar">
+                              </p>
+              </div>
+             
+
+
+                  
+                
+            
+        </form>
+    </main>
+</body>
+</html>
